@@ -9,6 +9,6 @@
         <asp:BoundField DataField="Duration" HeaderText="Duration" SortExpression="Duration" />
     </Columns>
 </asp:GridView>
-<asp:SqlDataSource ID="CDsTable" runat="server" ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\BCDManager.accdb;Persist Security Info=True" ProviderName="System.Data.OleDb" SelectCommand="SELECT * FROM [CDs]"></asp:SqlDataSource>
+<asp:SqlDataSource ID="CDsTable" runat="server" ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\BCDManager.accdb;Persist Security Info=True" ProviderName="System.Data.OleDb" SelectCommand="SELECT * FROM [CDs] ORDER BY pyear ASC"></asp:SqlDataSource>
     
 </asp:Content>
